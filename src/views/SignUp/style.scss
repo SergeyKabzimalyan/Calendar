@@ -1,0 +1,106 @@
+// SignInPage.scss
+
+.sign-up-page {
+  background-image: url('../../assets/images/home.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .home-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 999;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2); // Change background color on hover if desired
+    }
+  }
+
+  .content {
+    background-color: rgba(26, 26, 26, 0.8); // Slightly lighter than black with some transparency
+    padding: 40px; // Increased padding for larger content
+    border-radius: 10px; // Increased border radius
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); // Increased shadow
+    color: #333; // Darker text color
+    animation: slideDown 0.5s ease; // Animation for sliding down
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: white; // White color for the heading
+      font-size: 44px;
+    }
+
+    .form-group {
+      margin-bottom: 30px; // Increased margin between form groups
+      margin-top: 30px;
+
+
+      label {
+        color: #ddd; // Lighter color for the label
+      }
+
+      input {
+        width: 100%;
+        padding: 15px; // Increased padding for inputs
+        border: 1px solid #999; // Darker border color
+        border-radius: 8px; // Increased border radius
+        &:focus {
+          outline: none;
+          border-color: blue; // Color when input is focused
+        }
+      }
+    }
+
+    .bottom-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        display: flex;
+        align-items: center;
+        background-color: blue; // Button background color
+        color: white; // Button text color
+        border: none;
+        padding: 15px 30px; // Increased padding for button
+        border-radius: 8px; // Increased border radius
+        cursor: pointer;
+        &:hover {
+          background-color: darkblue; // Button background color on hover
+        }
+      }
+
+      .sign-up-link {
+        color: white;
+      }
+    }
+
+
+  }
+}

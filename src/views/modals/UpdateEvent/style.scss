@@ -1,0 +1,51 @@
+.create-event {
+  .create-event-modal-content {
+
+    .form {
+      .item {
+        margin-top: 10px;
+      }
+      .input {
+        height: 40px;
+        border-radius: 12px;
+      }
+
+      .textarea {
+        min-height: 100px;
+      }
+
+      .two-inputs {
+        margin-top: 10px;
+        .input-parent {
+          width: 49%;
+          .input {
+            width: 100%;
+          }
+        }
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .submit {
+        margin-top: 20px;
+      }
+      .form-container {
+        max-width: 100px;
+        margin: 0 auto;
+      }
+
+      .ant-form-item {
+        margin-bottom: 20px;
+      }
+
+      .error-message {
+        color: #ff4d4f;
+      }
+
+      .submit-button {
+        margin-top: 20px;
+      }
+    }
+
+  }
+}

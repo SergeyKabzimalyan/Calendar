@@ -1,0 +1,57 @@
+.create-event {
+
+  .ant-modal-footer {
+
+    .delete-button {
+      background-color: red;
+      color: white;
+      margin-left: 5px;
+    }
+  }
+  .create-event-modal-content {
+
+
+    .form {
+      .input {
+        height: 40px;
+        border-radius: 12px;
+      }
+
+      .textarea {
+        min-height: 100px;
+      }
+
+      .two-inputs {
+        .input-parent {
+          width: 49%;
+          .input {
+            width: 100%;
+          }
+        }
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .submit {
+        margin-top: 20px;
+      }
+      .form-container {
+        max-width: 100px;
+        margin: 0 auto;
+      }
+
+      .ant-form-item {
+        margin-bottom: 20px;
+      }
+
+      .error-message {
+        color: #ff4d4f;
+      }
+
+      .submit-button {
+        margin-top: 20px;
+      }
+    }
+
+  }
+}
